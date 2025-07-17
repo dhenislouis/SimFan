@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="verifikasi_nomor_ponsel">
+        <item>Verifikasi Nomor Ponsel</item>
+    </string-array>
+
+    <string-array name="akun_sandi_bank_ttd">
+        <item>Akun Saya</item>
+        <item>Ubah Kata Sandi</item>
+        <item>Akun Bank</item>
+        <item>Akun Tanda Tangan Elektronik</item>
+    </string-array>
+
+    <string-array name="fitur">
+        <item>Undang Teman &amp; Dapatkan Bonus</item>
+        <item>Riwayat Promo &amp; Cashback</item>
+        <item>Keuntungan Eksklusif Komunal</item>
+        <item>History Poin Privileges / Riwayat Poin Hadiah</item>
+    </string-array>
+
+    <string-array name="informasi_bantuan">
+        <item>Ketentuan Layanan</item>
+        <item>Aturan Privasi</item>
+        <item>Pertanyaan Umum</item>
+        <item>Profil Komunl / Info Komunal</item>
+    </string-array>
+
+    <string-array name="nonaktif_akun">
+        <item>Nonaktifkan Akun</item>
+    </string-array>
+
+    <string-array name="logout">
+        <item>Keluar dari Aplikasi</item>
+    </string-array>
+
+    <string-array name="advisor_keuangan">
+        <item>Advisor Keuangan</item>
+    </string-array>
+
+    <string-array name="bantuan">
+        <item>Bantuan tersedia?</item>
+    </string-array>
+
+</resources>

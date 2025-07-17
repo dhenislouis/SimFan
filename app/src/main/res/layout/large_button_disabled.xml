@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardButtonDisabled"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/disabled_background"
+    android:enabled="false">
+
+    <TextView
+        android:id="@+id/textButtonNameDisabled"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Button Disabled"
+        android:textColor="@color/disabled_text"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:enabled="false" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

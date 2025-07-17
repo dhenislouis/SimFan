@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/ExtraSmallTertiaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="XS Tertiary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+</FrameLayout>

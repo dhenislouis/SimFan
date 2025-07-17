@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom"
+    android:padding="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SmallSecondaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Button Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

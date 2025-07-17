@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_primary">
+
+        <!-- 🖼️ Image Placeholder (besar, di tengah atas) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImageLarge"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#F5F5F5">
+
+            <ImageView
+                android:id="@+id/imagePlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:background="@drawable/ic_placeholder"
+                android:padding="16dp"
+                android:contentDescription="Placeholder image" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- 📝 Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card title"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- 💬 Subtitle -->
+        <TextView
+            android:id="@+id/textSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtitle"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

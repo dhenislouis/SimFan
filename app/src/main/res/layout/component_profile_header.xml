@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:background="@color/bg_secondary">
+
+    <!-- Foto Profil -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ayu_cantika"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_circle_white_border"
+        android:layout_marginEnd="12dp"
+        android:clipToOutline="true" />
+
+    <!-- Nama & Email -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayu Cantika"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ayucantika@email.com"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Kode Referral Box -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@drawable/bg_referral_box"
+        android:gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:minWidth="100dp">
+
+        <!-- Ikon Referral -->
+        <ImageView
+            android:id="@+id/referralIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_kodereveral"
+            app:tint="@color/black"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Teks Referral -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/referralLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode Referral"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/referralCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RV07162"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

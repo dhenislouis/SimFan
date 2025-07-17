@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_secondary">
+
+    <!-- AppBar -->
+    <include layout="@layout/component_beranda_appbar" />
+    <include layout="@layout/component_beranda_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Simulasi Deposito -->
+            <include layout="@layout/component_beranda_deposito_simulasi" />
+
+            <!-- Banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/SectionTitlePromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+            <include layout="@layout/component_beranda_promo_banner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/SectionTitlePromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Produk Deposito Rekomendasi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <include layout="@layout/component_beranda_deposito_card_rekomendasi" />
+            <include layout="@layout/component_beranda_deposito_card_rekomendasi" />
+            <include layout="@layout/component_beranda_deposito_card_rekomendasi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/SectionTitleDepositoAktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposito Aktif"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <include layout="@layout/component_beranda_deposito_card_aktif" />
+            <include layout="@layout/component_beranda_deposito_card_aktif" />
+            <include layout="@layout/component_beranda_deposito_card_aktif" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

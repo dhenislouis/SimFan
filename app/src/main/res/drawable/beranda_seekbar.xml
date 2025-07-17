@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Track background -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="#80FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Track progress -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="8dp" />
+                <solid android:color="@color/white" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

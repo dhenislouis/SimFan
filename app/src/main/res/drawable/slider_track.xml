@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="@color/slider_bg" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="20dp" />
+                <solid android:color="@color/primary" /> <!-- 50% transparan biru -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

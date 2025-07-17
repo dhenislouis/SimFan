@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerForms"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@color/text_primary">
+
+    <!-- 1️⃣ Form Normal -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <EditText
+            android:id="@+id/editTextNormal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:hint="Hint text"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- 2️⃣ Form Normal with Icon -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editTextNormalWithIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Hint text"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#888888" />
+
+            <ImageView
+                android:id="@+id/iconEye"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_eye"
+                android:contentDescription="Eye Icon" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 3️⃣ Form Normal Disabled -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <EditText
+            android:id="@+id/editTextNormalDisabled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:hint="Hint text"
+            android:enabled="false"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

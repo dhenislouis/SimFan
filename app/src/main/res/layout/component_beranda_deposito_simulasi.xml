@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardSimulasiDeposito"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/icon_primary_secondary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simulasi Deposito"
+            android:textSize="16sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Jumlah deposito dan nominal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Deposito"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/labelJumlahDeposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp1.509.000"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- SLIDER -->
+        <com.google.android.material.slider.Slider
+        android:id="@+id/sliderDeposito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="10000000"
+        android:value="1509000"
+        app:stepSize="100000"
+        app:trackHeight="10dp"
+        app:trackColorActive="@color/primary"
+        app:trackColorInactive="#80FFFFFF"
+        app:thumbDrawable="@drawable/beranda_thumb_with_border"
+        app:haloColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+
+        <!-- Pilih Durasi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Durasi"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Opsi Durasi Bulan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- Contoh durasi -->
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="3 Bulan"
+                android:background="@drawable/bg_white_rounded"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="6 Bulan"
+                android:background="@drawable/bg_white_rounded"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="9 Bulan"
+                android:background="@drawable/bg_white_rounded"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="12 Bulan"
+                android:background="@drawable/bg_white_rounded"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"/>
+        </LinearLayout>
+
+        <!-- Pilih Suku Bunga -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Suku Bunga"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Opsi Suku Bunga -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="2%"
+                android:background="@drawable/bg_white_rounded"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="3%"
+                android:background="@drawable/bg_white_rounded"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="5%"
+                android:background="@drawable/bg_white_rounded"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="6%"
+                android:background="@drawable/bg_white_rounded"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="9dp"/>
+        </LinearLayout>
+
+        <!-- Tombol Lihat Hasil -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLihatHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Hasil"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/primary" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

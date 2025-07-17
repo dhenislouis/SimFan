@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.simfan.ui.beranda.BerandaFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/produkFragment"
+        android:name="com.example.simfan.ui.produk.ProdukFragment"
+        android:label="Produk" />
+
+    <fragment
+        android:id="@+id/depositoFragment"
+        android:name="com.example.simfan.ui.deposito.DepositoFragment"
+        android:label="Deposito" />
+
+    <fragment
+        android:id="@+id/promoFragment"
+        android:name="com.example.simfan.ui.promo.PromoFragment"
+        android:label="Promo" />
+
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.simfan.ui.profile.ProfileFragment"
+        android:label="Profil" />
+
+</navigation>

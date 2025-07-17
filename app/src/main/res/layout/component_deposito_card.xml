@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Baris Gambar + Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Gambar -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/simfan_websuite"
+                android:layout_marginEnd="12dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_rounded_image"
+                android:clipToOutline="true"/>
+
+            <!-- Info Teks -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Baris 1: Nama + Status -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Simfan Websuite"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/secondary"
+                        android:text="Proses"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/bg_secondary_rounded" />
+                </LinearLayout>
+
+                <!-- Baris 2: Estimasi Waktu -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="6 bulan - Estimasi Aktif 20 Juli 2025"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Penempatan & Estimasi Bagi Hasil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penempatan"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp10.000.000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Est. Bagi Hasil"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp200.000"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tombol Aksi: Ikon kiri, teks tengah, ikon titik 3 kanan -->
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/kuning_krem"
+            android:text="Tanda Tangan Dokumen"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_dokumen"
+            android:drawableEnd="@drawable/ic_more_horizontal"
+            android:drawableTint="@color/secondary"
+            android:drawablePadding="8dp"
+            android:paddingHorizontal="12dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/bg_primary"
+        android:gravity="center_vertical">
+
+        <!-- 📷 Placeholder Gambar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#F5F5F5"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/imagePlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:background="@drawable/ic_placeholder"
+                android:padding="12dp"
+                android:contentDescription="Image placeholder" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- 📝 Teks Area -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 🏷️ Label -->
+            <TextView
+                android:id="@+id/textLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LABEL"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="4dp" />
+
+            <!-- 📝 Title -->
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="2dp" />
+
+            <!-- 💬 Message -->
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This message of the popup is wrapped."
+                android:textSize="14sp"
+                android:textColor="@color/text_primary" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

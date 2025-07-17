@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/popup_background"
+    android:layout_margin="32dp"
+    android:elevation="8dp"
+    android:gravity="center"
+    android:clipToPadding="false"
+    android:layout_gravity="center">
+
+    <!-- Include image (top) -->
+    <include layout="@layout/image_size_3x2" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvPopupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popup title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tvPopupMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This message of the popup is wrapped by the containers."
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <!-- Primary button -->
+    <include
+        layout="@layout/medium_button_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Secondary button -->
+    <include
+        layout="@layout/medium_button_secondary"
+        android:id="@+id/MediumSecondaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

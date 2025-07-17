@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="56dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="4dp"
+    android:paddingVertical="8dp"
+    android:background="?android:selectableItemBackground">
+
+    <!-- Ikon kiri -->
+    <ImageView
+        android:id="@+id/menuIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_phone"
+    android:contentDescription="icon" />
+
+    <!-- Teks -->
+    <TextView
+        android:id="@+id/menuLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Verifikasi Nomor Ponsel"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- Ikon panah kanan -->
+    <ImageView
+        android:id="@+id/menuChevron"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_chevron_right"
+        android:contentDescription="arrow" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_3x2_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/image3x2"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_placeholder"
+        android:scaleType="centerCrop"
+        android:background="#CCCCCC"
+        android:contentDescription="3x2" />
+
+</LinearLayout>

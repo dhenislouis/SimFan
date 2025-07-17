@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerForms"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@color/text_primary">
+
+    <!-- 1️⃣ Disabled Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Label name"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#F3F3F3">
+
+        <EditText
+            android:id="@+id/editTextDisabled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:hint="Fixed input"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:textColor="#AAAAAA"
+            android:textColorHint="#AAAAAA" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- 2️⃣ Disabled Input with Icon -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Label name"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#F3F3F3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editTextDisabledWithIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:hint="Fixed input"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:textSize="16sp"
+                android:textColor="#AAAAAA"
+                android:textColorHint="#AAAAAA" />
+
+            <ImageView
+                android:id="@+id/iconDisabledEye"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_eye"
+                android:contentDescription="Eye Icon"
+                android:alpha="0.4" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 3️⃣ Full Disabled Without Label -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="0dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#F3F3F3">
+
+        <EditText
+            android:id="@+id/editTextDisabledNoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:hint="Fixed input"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp"
+            android:textColor="#AAAAAA"
+            android:textColorHint="#AAAAAA" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

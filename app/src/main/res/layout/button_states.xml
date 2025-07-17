@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ButtonState"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/primary">
+
+        <TextView
+            android:id="@+id/textButtonName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Button Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+</merge>

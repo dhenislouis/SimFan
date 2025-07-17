@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom"
+    android:padding="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/LargePrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/secondary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

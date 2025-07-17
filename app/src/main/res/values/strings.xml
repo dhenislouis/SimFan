@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimFan</string>
+    <string name="produk_image">Gambar Produk</string>
+    <string name="opsi_lain">Opsi lainnya</string>
+    <string name="status_icon">Ikon status</string>
+    <string name="more_options">Opsi lainnya</string>
+
+</resources>
